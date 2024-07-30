@@ -8,7 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { StylesModule } from './styles/courses.module';
+
 import { MatListModule } from '@angular/material/list';
 import { StylesPipesModule } from './styles-pipes/styles-pipes.module';
 
@@ -23,7 +23,6 @@ import { StylesPipesModule } from './styles-pipes/styles-pipes.module';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    StylesModule,
     MatListModule,
     StylesPipesModule,
   ],
