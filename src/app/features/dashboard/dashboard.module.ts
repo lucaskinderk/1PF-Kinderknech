@@ -8,9 +8,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-
 import { MatListModule } from '@angular/material/list';
 import { StylesPipesModule } from './styles-pipes/styles-pipes.module';
+import { CoursesModule } from './courses/courses.module';
 
 @NgModule({
   declarations: [DashboardComponent],
@@ -25,6 +25,7 @@ import { StylesPipesModule } from './styles-pipes/styles-pipes.module';
     MatCardModule,
     MatListModule,
     StylesPipesModule,
+    CoursesModule,
   ],
 })
 export class DashboardModule {}
