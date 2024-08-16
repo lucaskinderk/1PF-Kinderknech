@@ -2,19 +2,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClasesComponent } from './clases/clases.component';
 import { adminGuard } from '../../core/guards/admin.guard';
+import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
-  // Ya sabemos que el path actual es /dashboard
-
+  {
+    path: '',
+    component: DashboardComponent,
+  },
   {
     path: 'clases',
     canActivate: [adminGuard],
     loadChildren: () =>
       import('./clases/clases.module').then((m) => m.ClasesModule),
-    // component: ClasesComponent,
   },
   {
-    // /dashboard/courses
     path: 'courses',
     loadChildren: () =>
       import('./courses/courses.module').then((m) => m.CoursesModule),

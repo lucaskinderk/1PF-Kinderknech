@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { StylesPipesModule } from './styles-pipes/styles-pipes.module';
 import { CoursesModule } from './courses/courses.module';
+import { ClasesModule } from './clases/clases.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [DashboardComponent],
@@ -26,6 +28,8 @@ import { CoursesModule } from './courses/courses.module';
     MatListModule,
     StylesPipesModule,
     CoursesModule,
+    ClasesModule,
+    ReactiveFormsModule
   ],
 })
 export class DashboardModule {}

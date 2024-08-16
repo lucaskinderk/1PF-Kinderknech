@@ -8,20 +8,14 @@ import { DashboardModule } from './features/dashboard/dashboard.module';
 import { AuthModule } from './features/auth/auth.module';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
-
+import { CoreModule } from './core/core.module';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './features/dashboard/dashboard.component';
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, DashboardModule, AuthModule],
-  providers: [
-    provideAnimationsAsync(),
-    provideNativeDateAdapter(),
-    {
-      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
-      useValue: {
-        appearance: 'outline',
-      },
-    },
-  ],
+  imports: [BrowserModule, AppRoutingModule, CoreModule, MatIconModule, BrowserAnimationsModule, DashboardModule],
+  providers: [provideAnimationsAsync(), provideNativeDateAdapter()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

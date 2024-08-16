@@ -29,6 +29,7 @@ import { MatTableModule } from '@angular/material/table';
     MatDatepickerModule,
     MatTableModule,
     MatProgressSpinnerModule,
+    MatIconModule,
   ],
 })
 export class CoursesModule {}

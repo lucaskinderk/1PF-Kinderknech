@@ -9,15 +9,15 @@ import { authGuard } from './core/guards/auth.guard';
 const routes: Routes = [
   {
     path: 'auth',
-    loadChildren: () =>
-      import('./features/auth/auth.module').then(
-        (referenciaAlArchivo) => referenciaAlArchivo.AuthModule
-      ),
-    // component: LoginComponent,
+    component: LoginComponent,
+  },
+  {
+    path: '',
+    pathMatch:'full',
+    redirectTo:'/auth',
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
     canActivate: [authGuard],
     loadChildren: () =>
       import('./features/dashboard/dashboard.module').then(

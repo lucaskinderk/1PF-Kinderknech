@@ -9,13 +9,13 @@ import { generateId } from '../../shared/utils';
 export class ClasesService {
   private DATABASE: Clases[] = [
     {
-      id: 'akdjv3',
-      name: 'PC Gamer',
-      price: 9999,
+      id: 'aaa',
+      name: 'Libro 1',
+      price: 1580,
     },
     {
-      id: 'akdjv4',
-      name: 'Play 5',
+      id: 'bbb',
+      name: 'Libro 2',
       price: 1000,
     },
   ];
